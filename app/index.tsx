@@ -1,4 +1,9 @@
-import {View,Text,StyleSheet,TouchableOpacity,Image,
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
 } from "react-native";
 import { useRouter } from "expo-router";
 
@@ -32,8 +37,8 @@ export default function IndexScreen() {
           <TouchableOpacity
             key={p.id}
             style={styles.profileButton}
-            activeOpacity={0.7}
-            onPress={() => router.push("/(tabs)")}
+            activeOpacity={0.7}onPress={() => router.replace("/(tabs)" as any)}
+
           >
             <Image source={{ uri: p.img }} style={styles.avatar} />
             <Text style={styles.profileName}>{p.name}</Text>

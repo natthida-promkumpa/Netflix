@@ -11,7 +11,7 @@ export default function TabsIndex() {
       {/* Header */}
     <View style={styles.header}>
       <TouchableOpacity onPress={() => router.replace("/")}>
-      <Text style={styles.backBtn}>←เปลี่ยนบัญชี</Text>
+        
       </TouchableOpacity>
       <Text style={styles.logo}>NETFLIX</Text>
     </View>
